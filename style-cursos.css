@@ -261,6 +261,15 @@ header .menu p a:hover {
     list-style-type: decimal; 
 }
 
+@media (max-width: 650px) {
+    .carga-horaria {
+        display: flex;
+        flex-direction: column; /* Mude a direção da flexbox para coluna em telas menores que 1500px */
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+
 .configuracao {
     align-items: center;
     max-width: 1500px;
