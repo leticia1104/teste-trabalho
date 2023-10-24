@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'cedora-bold';
+}
+
+/* IMPORTANDO FONTE */
+@font-face {
+    font-family: 'cedora-bold';
+    src: url(fonts/Cedora-BoldStd.otf);
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+/* LOGO */
+header img { 
+    width: 300px;
+}
+
+/* MENU - BLOCO */
+header .menu {
+    display: flex;
+    gap: 50px;
+}
+
+/* LINK MENU */
+header .menu p a {
+    text-decoration: none;
+    color: black;
+}
+
+/* LINK MENU */
+header .menu p a:hover {
+    border-bottom: 2px solid #0560AC;
+    padding-bottom: 5px;
+}
+
+/* -------------------------- */
+
+/* HEADER MOBILE */
+@media (max-width: 480px) {
+    header{
+      display: flex;
+      flex-direction: column;      
+      background-color: white;
+    }
+}
+
+/* LOGO MOBILE */
+@media (max-width: 480px) {
+    header img{
+      width: 290px;
+    }
+}
+
+/* MENU MOBILE */
+@media (max-width: 480px) {
+    header .menu {
+      font-size: 12px;
+      display: flex;
+      gap: 30px;
+    }
+}
+
+
+/* -------------------------- */
+
+
+/* MENU TABLET */
+@media (max-width: 780px) {
+    header .menu {
+      font-size: 15px;
+      display: flex;
+    }
+}
+
+/* LOGO - TABLET */
+@media (max-width: 780px) {
+    header .logo img {
+      width: 300px;
+    }
+}
+
+/* -------------------------- */
+
+
+
+
+
+.curso {
+    margin-top: 80px;
+    padding: 30px;
+    text-align: left;
+}
+
+.curso h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0560AC;
+}
+
+.curso p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.curso h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    text-align: center;
+    color: #0560AC;
+}
+
+.curso li {
+    margin: 10px 0;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 50vh;
+    height: auto;
+    margin: 0 10px;
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.icone {
+    text-align: center;
+    box-sizing: border-box; /* Faz com que a borda inclua o espaçamento interno (padding) */
+    border-radius: 8px;
+    border: 5px solid #0560AC; /* Adicione a borda ao contêiner dos ícones */
+    width: 220px; /* Largura fixa para os contêineres .icone */
+    height: 150px; /* Altura fixa para os contêineres .icone (ajuste conforme necessário) */
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Espaçamento interno nos contêineres */
+}
+
+
+
+
+.profissional {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0; 
+}
+
+.profissional img {
+    width: 100%;
+    max-width: 50vh;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Estilo para os containers de semestre */
+.carga-horaria .container-semestre1,
+.carga-horaria .container-semestre2,
+.carga-horaria .container-semestre3 {
+    flex: 1; /* Distribui o espaço igualmente entre os containers */
+    margin: 0 8px;
+    padding: 20px; /* Espaçamento interno dentro dos containers */
+    border: 1px solid #c0e3ff; /* Borda de 1px com cor cinza */
+    border-radius: 5px;
+    background-color: #0561acb0; /* Cor de fundo azul claro */
+    color: #fff;
+    text-align: center; /* Centraliza o texto dentro dos containers */
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.carga-horaria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.ch {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 33px;
+    color: #0560AC;
+}
+
+/* Estilo para as listas de disciplinas dentro dos containers */
+.carga-horaria ul {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: left; /* Alinhar texto à esquerda dentro das listas */
+}
+
+.carga-horaria h3 {
+    margin: 20px 0;
+}
+
+.carga-horaria ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative; /* Adicionar posição relativa para os marcadores */
+}
+
+/* Estilo para os itens de lista principais */
+.carga-horaria .container-semestre1 > ul > li,
+.carga-horaria .container-semestre2 > ul > li,
+.carga-horaria .container-semestre3 > ul > li {
+    list-style-type: decimal; 
+}
+
+.configuracao {
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* RODAPÉ */
+footer{
+    margin-top: 70px;
+    background-color: #E3F2FD;
+    color: #050C26;
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+footer img{
+    width: 200px;
+}
+
+footer .rodape{
+    border-top: 0.2px solid #C3D6E3;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+}
