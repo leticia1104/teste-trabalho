@@ -220,6 +220,15 @@ header .menu p a:hover {
     align-items: center; /* Centraliza os itens horizontalmente */
 }
 
+@media (max-width: 1500px) {
+    .carga-horaria .container-semestre1,
+    .carga-horaria .container-semestre2,
+    .carga-horaria .container-semestre3 {
+        width: 100%; /* Define a largura para 100% quando a tela for menor que 1500px */
+        margin-bottom: 20px; /* Adicione algum espaçamento entre os containers */
+    }
+}
+
 .carga-horaria {
     display: flex;
     justify-content: space-around;
