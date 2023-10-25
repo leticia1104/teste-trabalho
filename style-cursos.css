@@ -200,6 +200,11 @@ header .menu p a:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+.diferenciais {
+    font-size: 18px;
+}
+
+
 
 
 
@@ -208,8 +213,8 @@ header .menu p a:hover {
 .carga-horaria .container-semestre2,
 .carga-horaria .container-semestre3 {
     flex: 1; /* Distribui o espaço igualmente entre os containers */
-    margin: 0 8px;
-    padding: 20px; /* Espaçamento interno dentro dos containers */
+    margin: 0 10px;
+    padding: 50px 50px 0 50px; /* Espaçamento interno dentro dos containers */
     border: 1px solid #c0e3ff; /* Borda de 1px com cor cinza */
     border-radius: 5px;
     background-color: #0561acb0; /* Cor de fundo azul claro */
@@ -261,14 +266,6 @@ header .menu p a:hover {
     list-style-type: decimal; 
 }
 
-@media (max-width: 1500px) {
-    .carga-horaria {
-        display: flex;
-        flex-direction: column; /* Mude a direção da flexbox para coluna em telas menores que 1500px */
-        max-width: 1500px;
-        margin: 0 auto;
-    }
-}
 
 .configuracao {
     align-items: center;
@@ -300,4 +297,55 @@ footer .rodape{
     text-align: center;
     padding-top: 10px;
     font-size: 12px;
+}
+
+
+/* --------------------------------- */
+
+
+@media(max-width: 768px){
+    /* Estilo para os containers de semestre */
+    .carga-horaria .container-semestre1,
+    .carga-horaria .container-semestre2,
+    .carga-horaria .container-semestre3 {
+        font-size: 35px;
+    }
+
+    .container-semestre1 h3 {
+        font-size: 30px;
+    }
+
+    .carga-horaria .container-semestre1 ul li,
+    .carga-horaria .container-semestre2 ul li,
+    .carga-horaria .container-semestre3 ul li{
+        font-size: 30px;
+    }
+
+
+}
+
+
+
+@media(max-width: 1024px){
+    /* Estilo para os containers de semestre */
+    .carga-horaria .container-semestre1,
+    .carga-horaria .container-semestre2,
+    .carga-horaria .container-semestre3 { 
+        font-size: 50px;   
+    }
+
+    .carga-horaria .container-semestre1 ul li,
+    .carga-horaria .container-semestre2 ul li,
+    .carga-horaria .container-semestre3 ul li{
+        font-size: 20px;   
+    }
+
+    .carga-horaria{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+
+
+
 }
